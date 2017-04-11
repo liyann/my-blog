@@ -1,0 +1,11 @@
+.btn-back {
+    width:40px;
+    height: 80px;
+    position: fixed;
+    bottom: 30px;
+    background: red;
+    left:50%;
+    margin-left: 500px;
+}
+.btn{
+}

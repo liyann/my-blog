@@ -16,3 +16,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+.idea/inspectionProfiles/
+.idea/jsLibraryMappings.xml
+.idea/jsLinters/
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml
+.idea/my-blog.iml
+.idea/workspace.xml
+
