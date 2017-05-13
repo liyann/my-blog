@@ -1,4 +1,4 @@
-/*@import url(~antd/dist/antd.css);*/
+@import url(../../node_modules/antd/dist/antd.css);
 .App {
   text-align: center; }
 
@@ -20,3 +20,6 @@
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
+body {
+  height: 2000px; }

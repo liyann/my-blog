@@ -2,20 +2,19 @@
  * Created by Li on 2017/3/28.
  */
 import React, {Component} from 'react'
-import {Router, Route, hashHistory} from 'react-router'
 import logo from '../assets/logo.svg';
 import './layout.css'
-// import '../default.css'
+import '../styles/default.css'
 class TopNav extends Component {
     constructor(props) {
         super(props);
         this.state = {isToggleOn: false};
 
         // This binding is necessary to make `this` work in the callback
-        this.handleMenuClick = this.handleMenuClick.bind(this);
+        TopNav.handleMenuClick = TopNav.handleMenuClick.bind(this);
     }
 
-    handleMenuClick() {
+    static handleMenuClick() {
         let nav = document.getElementsByTagName('nav');
         let height = nav[0].currentStyle ? nav[0].currentStyle.height : getComputedStyle(nav[0], null).height;
         height === "180px" ? nav[0].className = "slow-move-back" : nav[0].className = "slow-move";
@@ -27,7 +26,7 @@ class TopNav extends Component {
             <nav className="top-nav">
                 <div className="clearfloat">
                     <h1 className="pic"><a href="/"><img id="logo" alt="我的博客" src={logo}/></a></h1>
-                    <div className="menu-mobile" onClick={() => this.handleMenuClick()}>
+                    <div className="menu-mobile" onClick={() => TopNav.handleMenuClick()}>
                         <a href="#"><span>MENU</span></a>
                         <div className="menu-icon"/>
                     </div>
